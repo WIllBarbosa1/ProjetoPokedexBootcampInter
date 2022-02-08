@@ -1,10 +1,17 @@
-import React from "react";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './components/Layout';
+import AppRouter from './routes';
+import CreateStyle from './styles/global';
 
 function App() {
   return (
-    <div>
-      <h1>Pokédex</h1>
-    </div>
+    <Layout>
+      <BrowserRouter>
+        <AppRouter />
+        <CreateStyle />
+      </BrowserRouter>
+    </Layout>
   );
 }
 
